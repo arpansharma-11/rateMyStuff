@@ -4,7 +4,7 @@ const Cors = require("cors"); // USed fot Cross Origin resource Sharing , which 
 const BodyParser = require("body-parser");
 const { request, response } = require("express");
 
-const client = new MongoClient("mongodb+srv://admin:admin@cluster0.ott3p.mongodb.net/University?retryWrites=true&w=majority");
+const client = new MongoClient("");
 const server = Express();
 
 server.use(Express.json());
