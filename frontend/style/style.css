@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
+
+.slogan{
+    position:absolute;
+    top: 35%;
+    
+}
+
+.slogan h1{
+    color: cornsilk;
+    font-size: 2.3rem;
+    max-width: 550px;
+    font-weight: 600;
+}
+.centeritem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.6;
+ }
+
+
+.carousel-inner{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background: black;
+    overflow: hidden;
+}
+
+
+
+
+.wrapper{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #01f7ff;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.revbtn{
+    position:absolute;
+    top: 60%;
+    
+    text-align: center;
+    
+}
+.revbtn a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    background:cyan;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    
+}
+.revbtn a:hover{
+    text-decoration: none;
+}
+.searchbtn .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+
+.sec1 h2{
+    font-weight: 900;
+}
+
+.p{
+    display: flex;
+    align-items:center;
+    font-size: 1.5em;
+}
+
+.text1{
+    padding: 50px;
+    align-items: center;
+}
+
+.text1 span{
+    color: teal;
+    font-weight: bold;
+}
+
+.p img{
+    height: 50vw;
+    width: 50vw;
+}
+
+
+.sect2{
+    background-color: black;
+    color:white;
+
+}
+.sect2 h2{
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+    .p{
+        display: block;
+        font-size: 1em;
+    }
+    .p img{
+        height: 100%;
+        width: 100%;
+    }
+    
+  }
+
+.foot{
+    height: 300px;
+    background:rgb(243, 236, 236);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+}
+
+  
+  .foot1{
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 3rem;
+  }
+
+  .foot2{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.colleges img{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+   
+}
+
+.colleges{
+    padding: 2rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+
+.colleges h1{
+    font-weight: 600;
+}
+.colleges h5{
+    font-weight: 600;
+}
+
+.result{
+    background :cyan;
+    
+}
+
+#collegelist{
+    font-size: larger;
+    font-weight: bolder;
+    list-style: none;
+   
+}

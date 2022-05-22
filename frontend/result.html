@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result page</title>
+</head>
+<body>
+        <div>
+            <ul id="collegelist">
+            </ul>
+        </div>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+server.get("/get/:id", async(request, response) => {
+    try{
+        let result = await collection.findOne({ "_id": ObjectId(request.params.id) });
+        response.send(result)
+    } catch (e)
+    {
+        response.status(500).send({ message: e.message });
+    }
+});
